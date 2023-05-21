@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
     res.send(
-      '<h1>Diabolos System Security</h1><ul><li><p><b>/ver</b></p></li><li><p><b>POST /insertar</b>  => {ID, Sensor_PIR, nombre, Fecha}</p></li>')
+      '<h1>apifinal</h1><ul><li><p><b>/ver</b></p></li><li><p><b>POST /insertar</b>usuario</p></li>')
   })
 
   app.get('/ver', (req, res) => {
