@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
     res.send(
-      '<h1>apifinal</h1><ul><li><p><b>/ver</b></p></li><li><p><b>POST /insertar</b>usuario</p></li>')
+      '<h1>apifinal</h1><ul><li><p><b>/ver</b></p></li><li><p><b>POST /insertar</b>=> {Usuario}</p></li>')
   })
 
   app.get('/ver', (req, res) => {
