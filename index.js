@@ -43,12 +43,12 @@ app.get('/', (req, res) => {
       
       db.collection('/valores').add({
        
-        usuario: req.body.nombre,
+        usuario: req.body.usuario,
         ingreso: new Date().toJSON()
         
       });
       res.send({
-        usuario: req.body.nombre,
+        usuario: req.body.usuario,
         ingreso: new Date().toJSON(),
         status: 'Valores insertados!'
     })
