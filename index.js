@@ -17,9 +17,7 @@ app.get('/', (req, res) => {
 
   app.get('/ver', (req, res) => {
     const db = fire.firestore();
-      db.settings({
-        timestampsInSnapshots: true
-      });
+     
       var wholeData = []
       db.collection('/valores').orderBy('ingreso', 'desc').get()
       .then(snapshot => {
